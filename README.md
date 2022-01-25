@@ -45,4 +45,12 @@ I forget all the time how to use various different programs. pwd is very simple 
 So right now we're in the home directory of the ubuntu user if you've been following along with me. Every user gets their own folder in the /home folder. Since our user is named ubuntu, they have their own folder called ubuntu. Let's first see if we have any files inside of our home directory. Type ls and hit enter. ls stands for list, and it means show me everything inside of the folder where I am.
 
 ## Arguments / Parameters
+In the case of `cd`, we're passing data into `cd` to tell it how to run. If we run `cd ..`, the `..` is an argument or parameter. Not all programs need parameters or sometimes they're optional. Let's look at pwd it never needs any arguments. Or ls which has optional arguments. If you say ls, it's the same as saying `ls ..` The `.` in this case means "this directory". which will tell you the path to where the program you're running is. Arguments are just bits of information you give to a program, frequently they're paths to files or folders but they can often be other things.
 
+## Flags
+`--help` which is a flag but this commands can take all sorts of flags to customize how they'll act. Like parameters, they're bits of information that change how the command works. Many programs allow you to be lazy and combine flags together. In this case, we can say `ls -la` and that's the same as `ls -a -l` (order doesn't matter either.) This is usually true but it depends on the individual command you're running.
+
+## Editors
+Nano is included on just about every Linux/Unix-like OS and is frequently the default text editor, due its tiny size, light weight, and permissive license.
+
+Let's try now, type `nano textfile.txt`. This will create a new file called `textfile.txt` in the directory in your folder. Type something in there and take a look at the bottom bar and you'll see a bunch of available actions.
